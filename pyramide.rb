@@ -8,13 +8,13 @@ if (choice_floor > 0 && choice_floor < 26)
   for i in (1..choice_floor)
 
     for j in (1..choice_floor-i)
-      print " "
+    	print " "
     end
 
     for k in (1..i)
-      print "#"
+      	print "#"
     end
-    puts " "
+    	puts " "
   end
 else
 	puts "Erreur! nombre non prise en charge"
