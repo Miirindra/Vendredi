@@ -4,14 +4,18 @@ print "> "
 
 choice_floor = gets.chomp().to_i
 
-for i in (1..choice_floor)
+if (choice_floor > 0 && choice_floor < 26)
+  for i in (1..choice_floor)
 
-  for j in (1..choice_floor-i)
-    print " "
-  end
+    for j in (1..choice_floor-i)
+      print " "
+    end
 
-  for k in (1..i)
-    print "#"
+    for k in (1..i)
+      print "#"
+    end
+    puts " "
   end
-  puts " "
+else
+	puts "Erreur! nombre non prise en charge"
 end
